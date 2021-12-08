@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" name="" id="btn" value="设置图片" />
+		<img src="images/cangjingkong.jpg" alt="哈哈哈" title="小可爱" id="im">
+
+		<script>
+			document.getElementById("btn").onclick = function() {
+				// var imobjs = document.getElementsByTagName("img");
+				// imobjs[0].alt = "嘿嘿嘿";
+				// imobjs[0].title = "我改变了";
+				
+				var imobjs = document.getElementById("im");
+				imobjs.alt = "嘿嘿嘿";
+				imobjs.title = "我改变了";
+			}
+		</script>
+	</body>
+</html>

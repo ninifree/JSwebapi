@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" name="" id="btn" value="改变内容" /><br />
+		<input type="text" name="" id="" value="" /><br />
+		<input type="text" name="" id="" value="" /><br />
+		<input type="text" name="" id="" value="" /><br />
+		<input type="text" name="" id="" value="" /><br />
+
+		<script>
+			document.getElementById("btn").onclick = function() {
+				var inputs = document.getElementsByTagName("input");
+				for (var i = 0; i < inputs.length; i++) {
+					if (inputs[i].type != "button") {
+						inputs[i].value = "你是个什么东西";
+					}
+				}
+			};
+		</script>
+	</body>
+</html>

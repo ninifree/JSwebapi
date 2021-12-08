@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" name="" id="btn" value="修改地址" />
+		<a href="http://www.baidu.com" id="ak">百度</a>
+		
+		<script>
+			document.getElementById("btn").onclick=function() {
+				var akobj = document.getElementById("ak");
+				akobj.href="http://www.taobao.com";
+				akobj.innerText="淘宝";
+			}
+		</script>
+	</body>
+</html>

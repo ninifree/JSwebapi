@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" id="btn" value="修改p内容">
+		<div id="dv1">
+			<p>哈哈哈</p>
+			<p>哈哈哈</p>
+			<p>哈哈哈</p>
+			<p>哈哈哈</p>
+		</div>
+		<div>
+			<p>小宝贝</p>
+			<p>小宝贝</p>
+			<p>小宝贝</p>
+		</div>
+		<script>
+			document.getElementById("btn").onclick=function() {
+				var pobjs=document.getElementById("dv1").getElementsByTagName("p");
+				for (var i=0;i<pobjs.length;i++) {
+					pobjs[i].innerText="我改变了";
+				}
+			};
+		</script>
+		
+	</body>
+</html>

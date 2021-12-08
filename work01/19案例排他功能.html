@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" name="" id="" value="没怀孕" />
+		<input type="button" name="" id="" value="没怀孕" />
+		<input type="button" name="" id="" value="没怀孕" />
+		<input type="button" name="" id="" value="没怀孕" />
+		<input type="button" name="" id="" value="没怀孕" />
+
+		<script>
+			var inputs = document.getElementsByTagName("input");
+			for (var i = 0; i < inputs.length; i++) {
+				inputs[i].onclick = function() {
+					for (var j = 0; j < inputs.length; j++) {
+						inputs[j].value = "没怀孕";
+					}
+
+					this.value = "怀孕了";
+				};
+			}
+		</script>
+	</body>
+</html>

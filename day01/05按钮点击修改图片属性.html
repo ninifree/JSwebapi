@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" name="" id="btn" value="按钮" />
+		<img src="images/boduo.jpg" id="im" alt="哈哈" title="嘎嘎">
+
+		<script>
+			document.getElementById("btn").onclick = function() {
+				var imObj = document.getElementById("im");
+				imObj.alt = "alt改变";
+				imObj.title = "title改变";
+			};
+		</script>
+	</body>
+</html>

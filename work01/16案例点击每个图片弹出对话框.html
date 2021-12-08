@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<img src="images/1-small.jpg">
+		<img src="images/2-small.jpg">
+		<img src="images/3-small.jpg">
+
+		<script>
+			var imgs = document.getElementsByTagName("img");
+			for (var i = 0; i < imgs.length; i++) {
+				imgs[i].onclick = function() {
+					alert("哈哈，你被点击了");
+				};
+			}
+		</script>
+	</body>
+</html>

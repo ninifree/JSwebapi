@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" name="" id="btn" value="选择菜单" />
+		<select id="ss">
+			<option value="q">1</option>
+			<option value="w">2</option>
+			<option value="e" id="ck">3</option>
+			<option value="r">4</option>
+		</select>
+
+		<textarea rows="8" cols="8" id="tx">
+			哈哈哈
+			嘿嘿嘿
+			呵呵呵
+		</textarea>
+		<input type="button" name="" id="btn2" value="注册" />
+
+		<script src="common.js"></script>
+		<script>
+			my$("btn").onclick = function() {
+				my$("ck").selected = true;
+			};
+		</script>
+
+		<script>
+			my$("btn2").onclick = function() {
+				my$("tx").innerText = "没了";
+			};
+		</script>
+	</body>
+</html>

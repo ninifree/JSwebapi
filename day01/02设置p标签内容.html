@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" id="btn" value="设置标签内容">
+		<p id="p1"></p>
+
+		<script>
+			var btnObj = document.getElementById("btn");
+			btnObj.onclick = function() {
+				var pObj = document.getElementById("p1");
+				pObj.innerHTML = "我是一个p标签";
+			};
+		</script>
+	</body>
+</html>
